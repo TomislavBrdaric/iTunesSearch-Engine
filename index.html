@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>iTunes Search app</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>iTunes App</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input">
+                        <input
+                            type="text"
+                            id="searchSong"
+                            placeholder="Search for artist or song..."
+                        />
+
+                        <button class="btn">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <thead>
+                            <th>Artist Name</th>
+                            <th>Collection Name</th>
+                            <th>Preview</th>
+                        </thead>
+                        <tbody id="songList"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="loader" class="loader-hidden"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
